@@ -18,7 +18,7 @@ import lombok.ToString;
 public class Product {
 	
 	@NotNull(message = "Product has to be imported or not")
-	private boolean isImported;
+	private boolean imported;
 
 	@Positive(message = "Product has to have a positive price")
 	private double price;
