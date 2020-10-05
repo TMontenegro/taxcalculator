@@ -12,8 +12,7 @@
 ## To-Do
 
 - [x] RESTful Web Service (CRUD's create method)
-- [ ] Client - Next.js
-- [ ] Integration test - Cypress
+- [x] Client - Next.js (https://taxcalculatorclient.vercel.app/)
 
 ## Running the application locally
 
