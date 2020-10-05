@@ -61,6 +61,6 @@ public class ReceiptService {
 							.mapToDouble(product -> product.sumTotal())
 							.sum();
 		
-		return Utils.round(total);
+		return Utils.roundToTwoDecimals(total);
 	}
 }
