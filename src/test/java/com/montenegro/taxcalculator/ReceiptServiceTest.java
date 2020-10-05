@@ -22,7 +22,7 @@ class ReceiptServiceTest {
 		List<Product> exemptProducts = this.getExemptProducts();
 
 		Receipt receipt = this.receiptService.create(exemptProducts);
-
+		
 		assertEquals(0.0, receipt.getSaleTax());
 		assertEquals(28.33, receipt.getTotal());
 	}
@@ -32,7 +32,7 @@ class ReceiptServiceTest {
 		List<Product> nonExemptProducts = this.getNonExemptProducts();
 
 		Receipt receipt = this.receiptService.create(nonExemptProducts);
-
+		
 		assertEquals(5.75, receipt.getSaleTax());
 		assertEquals(63.25, receipt.getTotal());
 	}
@@ -60,7 +60,7 @@ class ReceiptServiceTest {
 	private List<Product> getExemptProducts() {
 		return new ProductDTO().createProductList()
 				.addProduct(false, 12.49, 1, "book", "book")
-				.addProduct(false, 14.99, 1, "medicine", "medicine")
+				.addProduct(false, 14.99, 1, "medical", "medical")
 				.addProduct(false, 0.85, 1, "food", "food")
 				.build();
 	}
@@ -75,7 +75,7 @@ class ReceiptServiceTest {
 	private List<Product> getExemptImportedProducts() {
 		return new ProductDTO().createProductList()
 				.addProduct(true, 12.49, 1, "book", "book")
-				.addProduct(true, 14.99, 1, "medicine", "medicine")
+				.addProduct(true, 14.99, 1, "medical", "medical")
 				.addProduct(true, 0.85, 1, "food", "food")
 				.build();
 	}
