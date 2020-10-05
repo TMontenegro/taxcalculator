@@ -54,7 +54,6 @@ The project (a.k.a. project directory) has a particular directory structure. A r
 ├── src
 │   └── main
 │       └── java
-│           ├── br.com.montenegro.taxcalculator.builders
 │           ├── br.com.montenegro.taxcalculator.constants
 │           ├── br.com.montenegro.taxcalculator.controllers
 │           ├── br.com.montenegro.taxcalculator.entities
@@ -82,7 +81,6 @@ The project (a.k.a. project directory) has a particular directory structure. A r
 
 ## packages
 
-- `builders` — to hold our builders;
 - `constants` — to hold our constants;
 - `controllers` — to listen to the client;
 - `entities` — to hold our entities;

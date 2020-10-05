@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.montenegro.taxcalculator.builder.ProductDTO;
 import com.montenegro.taxcalculator.entities.Product;
+import com.montenegro.taxcalculator.entities.ProductDTO;
 import com.montenegro.taxcalculator.entities.Receipt;
 import com.montenegro.taxcalculator.services.ReceiptService;
 

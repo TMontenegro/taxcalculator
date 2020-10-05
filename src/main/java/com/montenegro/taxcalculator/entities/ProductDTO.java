@@ -1,9 +1,7 @@
-package com.montenegro.taxcalculator.builder;
+package com.montenegro.taxcalculator.entities;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.montenegro.taxcalculator.entities.Product;
 
 public class ProductDTO {
 	
