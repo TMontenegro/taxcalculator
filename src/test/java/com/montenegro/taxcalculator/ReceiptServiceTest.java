@@ -43,8 +43,8 @@ class ReceiptServiceTest {
 
 		Receipt receipt = this.receiptService.create(importedProducts);
 
-		assertEquals(1.41, receipt.getSaleTax());
-		assertEquals(29.74, receipt.getTotal());
+		assertEquals(1.4, receipt.getSaleTax());
+		assertEquals(29.73, receipt.getTotal());
 	}
 
 	@Test
