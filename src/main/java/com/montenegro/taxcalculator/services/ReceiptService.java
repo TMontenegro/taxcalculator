@@ -13,8 +13,8 @@ import com.montenegro.taxcalculator.utils.Utils;
 
 @Service
 public class ReceiptService {
-	private List<AbstractProduct> abstractProducts = new ArrayList<AbstractProduct>();
-
+	private List<AbstractProduct> abstractProducts;
+	
 	public Receipt create(List<Product> products) {
 		this.build(products);
 
@@ -28,6 +28,8 @@ public class ReceiptService {
 	}
 
 	public void build(List<Product> products) {
+		this.abstractProducts = new ArrayList<AbstractProduct>();
+		
 		for (Product product : products) {
 			if (AbstractProduct.isExempt(product.getCategory())) 
 				this.abstractProducts.add(new ExemptProductService(product));
