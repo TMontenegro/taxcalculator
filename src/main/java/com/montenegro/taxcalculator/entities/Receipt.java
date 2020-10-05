@@ -14,6 +14,9 @@ import lombok.ToString;
 public class Receipt {
 	
 	private double total;
+	
 	private double saleTax;
+	
 	private List<Product> products;
+	
 }

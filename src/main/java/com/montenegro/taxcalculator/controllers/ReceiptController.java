@@ -24,7 +24,6 @@ public class ReceiptController {
 		this.receiptService = receiptService;
 	}
 	
-	
 	@RequestMapping(path = "/checkout", method = RequestMethod.POST)
 	public Receipt create(@RequestBody  @NotNull @Size(min = 1) List<@Valid Product> products) throws Exception {
 		return this.receiptService.create(products);

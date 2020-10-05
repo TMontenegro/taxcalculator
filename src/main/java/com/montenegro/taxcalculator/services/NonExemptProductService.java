@@ -43,5 +43,4 @@ public class NonExemptProductService extends AbstractProduct {
 	public double sumTotal() {
 		return this.product.getPrice() * this.product.getAmount();
 	}
-
 }
