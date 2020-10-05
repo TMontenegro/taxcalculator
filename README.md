@@ -12,7 +12,8 @@
 ## To-Do
 
 - [x] RESTful Web Service (CRUD's create method)
-- [x] Client - Next.js (https://taxcalculatorclient.vercel.app/)
+- [x] Client - Next.js (https://github.com/TMontenegro/taxcalculatorclient) 
+      Obs: The client is hosted here https://taxcalculatorclient.vercel.app/ but, at the moment, the integration only works locally because the API is using HTTP and the client is using HTTPS.
 
 ## Running the application locally
 
