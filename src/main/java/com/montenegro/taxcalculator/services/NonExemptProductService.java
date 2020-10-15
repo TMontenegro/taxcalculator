@@ -19,7 +19,7 @@ public class NonExemptProductService extends AbstractProduct {
 
 	@Override
 	public Product applyTaxes() {
-		this.product.setPrice(this.product.getPrice() + this.sumTaxes());
+		this.product.setPrice(Utils.roundToTwoDecimals(this.product.getPrice() + this.sumTaxes()));
 
 		return this.product;
 	}
